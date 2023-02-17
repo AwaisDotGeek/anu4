@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basics of Python for Beginners</title>
+    <meta name="Description" content="Before starting coding in any programming language you should be aware of some following basic terms that will also help to start programming in python language.">
+    <meta name="Keywords" content="python, python basics, python for beginners">
+    <!--- Linking bootstrap to html--->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!---Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <!--Linking css to html-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Font Awesome-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Learn Python</h1>
+    <button type="button" class="button-53" name="button">To Learn C#</button>
+</div>
+
+<div class="row">
+
+  <div class="table-of-content-btn-container">
+    <button class="table-of-contents-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="col-3 col-s-3 menu">
+    <h4 style="text-align: center; color: #fff; margin: 0; padding: 5px;">Content</h4>
+    <ul>
+    <a href="/tutorials/python-tutorials/basics-of-python-for-beginners"><li class="menu-item selected">Basics for Beginners</li></a>
+    <a href="/tutorials/python-tutorials/python-built-in-functions"><li class="menu-item">Built-in Functions</li></a>
+    <a href="/tutorials/python-tutorials/python-datatypes"><li class="menu-item">Data Types</li></a>
+    <a href="/tutorials/python-tutorials/conditional-statements"><li class="menu-item">Conditional Statements  </li></a>
+    <a href="/tutorials/python-tutorials/non-conditional-statements"><li class="menu-item"> Non-Conditional Statements</li></a>
+    <a href="/tutorials/python-tutorials/loops-in-python"><li class="menu-item"> Loops </li></a>
+    <a href="/tutorials/python-tutorials/scope-of-a-variable"><li class="menu-item"> Scope of a Variable</li></a>
+    <a href="/tutorials/python-tutorials/functions-in-python"><li class="menu-item"> Functions</li></a>
+    <a href="/tutorials/python-tutorials/escape-sequences-in-python"><li class="menu-item"> Escape Sequences</li></a>
+    <a href="/tutorials/python-tutorials/recursion-in-python"><li class="menu-item"> Recursion</li></a>
+    <a href="/tutorials/python-tutorials/python-arrays"><li class="menu-item"> Python Arrays</li></a>
+    <a href="/tutorials/python-tutorials/exception-handling-in-python"><li class="menu-item"> Exception Handling</li></a>
+    <a href="/tutorials/python-tutorials/file-handling-in-python"><li class="menu-item"> File Handling</li></a>
+    <a href="/tutorials/python-tutorials/object-oriented-programming-in-python"><li class="menu-item"> Object Oriented Programming</li></a>
+    <a href="/tutorials/python-tutorials/introduction-to-machine-learning-with-python"><li class="menu-item"> Introduction to Machine Learning</li></a>
+    <a href="/tutorials/python-tutorials/basics-of-machine-learning"><li class="menu-item">  Basics of Machine Learning</li></a>
+    <a href="/tutorials/python-tutorials/standard-deviation-variance-percentile-and-scatter-plotting"><li class="menu-item"> Standard Deviation, Variance, Percentile & Scatter Ploting</li></a>
+    <a href="/tutorials/python-tutorials/data-distribution-and-normal-data-distribution"><li class="menu-item"> Data Distribution & Normal Data Distribution</li></a>
+    <a href="/tutorials/python-tutorials/regression"><li class="menu-item"> Linear, Polynomial & Multiple Regression</li></a>
+    <a href="/tutorials/python-tutorials/scale-and-train-test"><li class="menu-item"> Scale, Train & Test </li></a>
+    <a href="/tutorials/python-tutorials/decision-tree-in-python"><li class="menu-item"> Decision Tree</li></a>
+    <a href="/tutorials/python-tutorials/confusion-matrix-python"><li class="menu-item"> Confusion Matrix</li></a>
+    <a href="/tutorials/python-tutorials/hierarchical-clustering"><li class="menu-item"> Hierarchical Clustering </li></a>
+    <a href="/tutorials/python-tutorials/logistic-regression-in-python"><li class="menu-item">Logistic Regression</li></a>
+    <a href="/tutorials/python-tutorials/grid-search-and-cross-validation"><li class="menu-item">Grid Search & Cross Validation </li></a>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9 content-container">
+    <h1>Basics for Beginners</h1>
+    <p>Before starting python course you should be aware of some following basic terms that will also help to start programming in python language.</p>
+    <br />
+    <h4>Constants:</h4>
+    <p>
+      The values that are not expected to change during the execution of program. </p>
+      <div class="example">
+        <strong>Example:</strong>
+      <p>
+         34 , 20.67 etc.
+      </p>
+      </div>
+      <br />
+      <h4>Variables:</h4>
+      <p>
+        The values that can be changed during the execution of program.
+        It holds the data inside it that might be any number, quantity or any characteristics. </p>
+        <div class="example">
+          <strong>Example:</strong>
+        <p>
+          Number = 78 , Name = “Hashir”, City = “Attock”
+          <br />
+          Here Number, Name and City are variables
+
+        </p>
+        </div>
+        <br />
+        <h4>Comments:</h4>
+        <p>
+          The comments are the statements that are written for humans so that they can understand the code easily. Comments are not executed by compilers or interpreters.
+          The symbol indicating comments varies from language to language. In python, for writing comments “#” symbol is used. </p>
+          <div class="example">
+            <strong>Example:</strong>
+          <p>
+            Num1 = 6         # here Num1 is the first number
+            <br />
+            Num2 = 9         # here Num2 is the second number
+
+          </p>
+          </div>
+          <br />
+          <h4>Declaring Variables in Python:</h4>
+          <p>
+            We do not have to declare a variable with any specific data type in python.
+            It automatically determines the data type of variable as soon as the value is assigned to it. </p>
+            <div class="example">
+              <strong>Example:</strong>
+            <p>
+              Age = 42
+              <br />
+              Salary = 58000
+
+
+            </p>
+            </div>
+            <br />
+            <h4>How to print in Python:</h4>
+            <p>
+              The printing in python is the most easier in comparison to any other programming language.
+              To print in python you must need to use the built-in function print(). </p>
+              <div class="example">
+                <strong>Example:</strong>
+              <p>
+                print(“I am Alexa”)
+                <br />
+                Output:
+                I am Alexa
+
+
+              </p>
+              </div>
+              <br>
+              <img class = "image" src="../images/Screenshot (82).png" alt="printing-img">
+              <br>
+              <a  href="https://www.programiz.com/python-programming/online-compiler/"  target="_blank">
+                <button class="button-53">Try It </button> </a>
+              <br />
+              <br><br><br>
+              <h3>FAQ's </h3>
+              <h4> How to learn basics of python? </h4>
+              <p>You can easily learn basics of python from our website as it will teach you all the basics step by step else you can ask any of your friend to help you out if they are good in programming. </p>
+              
+              <h4>What are the basic concepts of python?</h4>
+              <p>I will shortlist the most important ones here for you,  <br>
+                  1.	Strings            &nbsp;&nbsp;&nbsp;&nbsp;  2. Numbers        &nbsp;&nbsp;&nbsp;&nbsp;   3. Tuples     &nbsp;&nbsp;&nbsp;&nbsp;  4. Lists  and much more
+            </p>
+              
+              <h4>What to do after learning basics of python?</h4>
+              <p>The first and foremost step is to <strong>practice</strong> what you have learnt. After having enough practice that you are confident enough to say you can do anything asked, you should move towards <strong>Learning a Web Framework in Python </strong> or <strong>Start Learning Machine Learning in Python. </strong>
+                  These are the top ways to proceed and earn some bucks. </p>
+                  
+               <h4>Who was the creator of basic c++ java and python?</h4>
+               <p>1.	C++ is developed by Bjarne Stroustrup in 1985. 
+               <br>
+                  2.	Java is developed by James A. Gosling in 1991.
+                  <br>
+                  3.	Python is developed by Guido van Rossum in 1991.</p>
+                 
+
+                  <div class="button-1-container">
+                    <a href="python-built-in-functions" class="button button-1">Next</a>
+                  </div>
+  </div>
+
+</div>
+<br />
+
+<!-- <a href="python-built-in-functions" class="button button-1">Next</a> -->
+<div class="footer">
+
+</div>
+
+
+
+  </body>
+
+  <script>
+    $(document).ready(function(){
+      let tocb = $('.table-of-contents-btn');
+      let selectedMenuItem = $('.menu-item')[0];
+
+      tocb.click(function(){
+        $('.menu').toggleClass('menu-active');
+        $(this).toggleClass('phush-tocb-right');
+
+        setTimeout(function(){
+          if(tocb.hasClass('phush-tocb-right')){
+            tocb.css({"left": ($('.menu').innerWidth() - tocb.innerWidth()) + 'px'});
+          } else {
+            tocb.css({"left": '12px'});
+          }
+        }, 500);
+      });
+
+      $('.content-container').click(function(){
+        if($('.menu').hasClass('menu-active')){
+          $('.menu').removeClass('menu-active');
+          $('.table-of-contents-btn').removeClass('phush-tocb-right');
+        }
+      });
+
+      $('.menu-item').click(function(e){
+        selectedMenuItem.removeClass('selected');
+        selectedMenuItem = e.target;
+        selectedMenuItem.classList.add('selected');
+      });
+    });
+  </script>
+</html>
